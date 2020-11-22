@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вэб-студия</title>
+  <style>  
+        /* Убираем маркеры */
+    li {list-style-type: none;} 
+    ul.header-list li,ul.direction-list li{display: inline;}           
+    /* Обнуляем настройки браузера */
+/*
+    .web{
+      font-family: Arial, Helvetica, sans-serif;
+      color: aqua;
+    }
+    body {
+          margin: 0;
+          padding: 0;
+        }
+    .header-box {
+          height: 80px;
+          width: 1600px;    
+    }
+    .hero {
+      width: 1600px;
+      height: 600px;
+      border: 1px solid black;
+      background: #2F303A;
+    }
+    .vertu{
+      height: 101px;
+      width: 1170px;
+      margin: 94px 215px 94px;   
+    }
+    .direction{
+      height: 386px;
+      width: 1170px;
+      margin: 94px 215px 94px;  
+    }
+    .team {
+      height: 648px;
+      width: 1600px;
+      background: #F5F4FA;
+      border: 1px solid black;
+    }
+    .footer
+    {
+      height: 252px;
+      width: 1600px;
+      background: #2F303A;
+    }
+*/
+  </style>
+</head>
+
+<body>
+  <header class="header-box">
+    <nav>
+      <ul class="header-list">
+        <li class="header-item">
+          <a  lang="en" 
+              href="webstudio-1.html"
+              target="_blank"
+              rel="nofollow noreferrer"
+              aria-label="Логотип">
+              <span class="web">Web</span>Studio
+            </a>
+        </li>
+        <li class="header-item">
+          <a href="#">Студия</a>
+        </li>
+        <li class="header-item">
+          <a href="#">Портфолио</a>
+        </li>
+        <li class="header-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <address>
+      <a lang="en" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <p>+38 096 111 11 11</p>
+    </address>
+
+  </header> <!--heigh=80-->
+  
+  <main>
+    <section class=hero>
+      <!--HERO 1600/600 #2F303A-->
+      <h1>
+        Эффективные решения<br />для вашего бизнеса
+      </h1>
+      <!--butt-200/50-#2196F3-->
+      <button type="button">Заказать услугу</button>
+    </section>
+
+    <!--Достоинства-->
+
+    <section class="vertu">
+      
+        <h2 hidden>--Достоинства--</h2>
+      <ul>
+        <li>
+          <h3>Внимание к деталям</h3>
+          <p>
+            Идейные соображения, а также начало повседневной работы по
+            формированию позиции.
+          </p>
+        </li>
+        <li>
+          <h3>Пунктуальность</h3>
+          <p>
+            Задача организации, в особенности же рамки и место обучения кадров
+            влечет за собой.
+          </p>
+        </li>
+        <li>
+          <h3>Планирование</h3>
+          <p>
+            Равным образом консультация с широким активом в значительной
+            степени обуславливает.
+          </p>
+        </li>
+        <li>
+          <h3>Современные технологии</h3>
+          <p>
+            Значимость этих проблем настолько очевидна, что реализация
+            плановых заданий.
+          </p>
+        </li>
+      </ul>
+    
+    </section>
+
+    <!--Направления деятельности-->
+
+    <section class='direction'>
+      
+      <h2>Чем мы занимаемся</h2>
+      <ul class="direction-list">
+        <li>
+          <img src="images/box-1.jpg" alt="Программист за работой" width="370" height="294" />
+        </li>
+        <li>
+          <img src="images/box-2.jpg" alt="Дизайнер за работой" width="370" height="294" />
+        </li>
+        <li>
+          <img src="images/box-3.jpg" alt="Дизайнер выбирает колор" width="370" height="294" />
+        </li>
+      </ul>
+      
+    </section>
+
+    <!--Галерея команды-->
+
+    <section class="team">
+      
+      <h2>Наша команда</h2>
+      <ul class="team-list">
+        <li>
+          <img src="images/img-1.jpg" alt="Игорь" width="270" height="260" />
+          <h3>Игорь Демьяненко</h3>
+          <p>Product Designer</p>
+        </li>
+        <li>
+          <img src="images/img-2.jpg" alt="Ольга" width="270" height="260" />
+          <h3>Ольга Репина</h3>
+          <p>Frontend Developer</p>
+        </li>
+        <li>
+          <img src="images/img-3.jpg" alt="Николай" width="270" height="260" />
+          <h3>Николай Тарасов</h3>
+          <p>Marketing</p>
+        </li>
+        <li>
+          <img src="images/img-4.jpg" alt="Михаил" width="270" height="260" />
+          <h3>Михаил Ермаков</h3>
+          <p>UI Designer</p>
+        </li>
+      </ul>
+      
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a  lang="en" 
+        href="webstudio-2.html"
+        target="_blank"
+        rel="nofollow noreferrer"
+        aria-label="Логотип">
+        <span class="web">Web</span>Studio
+    </a>
+    
+    <address>
+      <p>г. Киев, пр-т Леси Украинки, 26</p>
+      <p lang="en">info@example.com</p>
+      <p>+38 099 111 11 11</p>
+    </address>
+  </footer>
+
+</body>
+
+</html>
