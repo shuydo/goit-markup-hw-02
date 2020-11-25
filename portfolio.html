@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+        /*body {
+          margin: 0;
+          padding: 0;
+        }*/
+    </style>
+  </head>
+  <body>
+    <!--head-зарезервированное слово, в двух HTML-ках!-->
+    <header class="head">
+      <nav class="navigation">
+        <a
+          lang="en"
+          href="index.html"
+          aria-label="Логотип">
+          <span class="logo1st">Web</span><span class="logo2nd">Studio</span>
+        </a>
+        <!--target="_blank" rel="nofollow noreferrer"-->
+
+        <ul class="site-nav">
+          <li>
+            <a class="link" href="index.html">Студия</a>
+          </li>
+          <li>
+            <a class="link is-current" href="portfolio.html">Портфолио</a>
+          </li>
+          <li>
+            <a class="link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <address>
+        <a class="email" lang="en" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a>
+        <a class="phone" href="+380961111111" >+38 096 111 11 11</a>
+      </address>
+    </header>
+    
+                        <!--Собственно портфолио-->
+    <main>
+      <section class="portfolio-hero">        
+        <h1 hidden>Наши проекты</h1> <!--скрыть иначе-->
+                        <!--Кнопки фильтрации-->
+        <ul class="filter-list-buttons">
+          <li>
+             <button class="button">Все</button>
+          </li>
+          <li>
+            <button class="button">Веб-сайты</button>               
+          </li>
+          <li>               
+            <button class="button">Приложения</button>
+          </li>
+          <li>                
+            <button class="button">Дизайн</button>
+          </li>
+          <li>               
+            <button class="button">Маркетинг</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img
+                src="images/portf-img1.jpg"
+                alt="Изображение сайта"
+                width="370"
+                height="294"
+            />
+            <h2 class="item-header">Технокряк</h2>
+            <p class="them">Веб-сайт</p>
+          </li>
+          <li>
+            <img
+                src="images/portf-img2.jpg"
+                alt="Изображение постера"
+                width="370"
+                height="294"
+            />
+            <h2 class="item-header">Постер New Orlean vs Golden Star</h2>
+            <p class="them">Дизайн</p>
+          </li>
+          <li>
+            <img
+                src="images/portf-img3.jpg"
+                alt="Изображение логотипа ресторана"
+                width="370"
+                height="294"
+            />
+            <h2 class="item-header">Ресторан Seafood</h2>
+            <p class="them">Приложение</p>
+          </li>
+          <li>
+            <img
+                src="images/portf-img4.jpg"
+                alt="Изображение логотипа Prime"
+                width="370"
+                height="294"
+            />
+            <h2 class="item-header">Проект Prime</h2>
+            <p class="them">Маркетинг</p>
+          </li>
+          <li>
+            <img
+                src="images/portf-img5.jpg"
+                alt="Изображение логотипа проекта Boxes"
+                width="370"
+                height="294"
+             />
+            <h2 class="item-header">Проект Boxes</h2>
+            <p class="them">Приложение</p>
+          </li>
+          <li>
+            <img
+                src="images/portf-img6.jpg"
+                alt="Изображение гавной страницы сайта"
+                width="370"
+                height="294"
+            />
+            <h2 class="item-header">Inspiration has no Borders</h2>
+            <p class="them">Веб-сайт</p>
+          </li>
+          <li>
+            <img
+                src="images/portf-img7.jpg"
+                alt="Изображение разворота издания"
+                width="370"
+                height="294"
+            />
+            <h2 class="item-header">Издание Limited Edition</h2>
+            <p class="them">Дизайн</p>
+          </li>
+          <li>
+            <img
+                src="images/portf-img8.jpg"
+                alt="Изображение дизайна LAB"
+                width="370"
+                height="294"
+            />
+            <h2 class="item-header">Проект LAB</h2>
+            <p class="them">Маркетинг</p>
+          </li>
+          <li>
+            <img
+                src="images/portf-img9.jpg"
+                alt="Изображение заглавной станицы сайта"
+                width="370"
+                height="294"
+            />
+            <h2 class="item-header">Growing Business</h2>
+            <p class="them">Приложение</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+        <a
+          lang="en"
+          href="webstudio-2.html"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="Логотип"
+        >
+          <span class="logo1st">Web</span><span class="logo2nd">Studio</span>
+        </a>
+  
+        <address>
+          <p class="map-address">г. Киев, пр-т Леси Украинки, 26</p>
+          <p class="footer-coordinates" lang="en">info@example.com</p>
+          <p class="footer-coordinates">+38 099 111 11 11</p>
+        </address>
+      </footer>
+   </body>
+</html>

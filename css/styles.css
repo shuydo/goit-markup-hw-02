@@ -1,15 +1,12 @@
-.address {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  /*color: #2196f3;                 Почму-то черной не становится*/
+:root {
+  --primary-text-color:#757575;
+  --title-text-color:#212121;
+  --accent-color:#2196f3;
 }
-address {
-  font-style: normal;
-}
+li {list-style-type: none;}
+a {text-decoration: none;}
+address {font-style: normal;}
+
 .logo1st {
   font-family: Raleway, sans-serif;
   font-style: normal; /*in default*/
@@ -17,7 +14,7 @@ address {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .logo2nd {
   font-family: Raleway, sans-serif;
@@ -26,32 +23,42 @@ address {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /*color: #000000; on default*/
+  color: #000000;
 }
-.navigation-list-link {
+.site-nav .link {
   font-family: Roboto;
   /*font-style: normal;*/
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-text-color);
 }
-
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.header-tel:hover,
-.header-tel:focus {
-  color: #2196f3;
+.site-nav .link.is-current{
+  color:var(--accent-color);
 }
-.header-tel {
+.site-nav .link:hover,
+.site-nav .link:focus,
+.email:hover,
+.email:focus,
+.phone:hover,
+.phone:focus {
+  color: var(--accent-color);
+}
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.email,
+.phone {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .hero-title {
   font-family: Roboto;
@@ -62,20 +69,21 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: #FFFFFF;*/
+  color: #ffffff;
+  background-color: #2f303a; /*убрать при наложении фона*/
 }
 .button {
   font-family: Roboto;
   /*font-style: normal;*/
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.625;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--title-text-color);
+  /*background-color: var(--accent-color);*/
   border-radius: 4px;
 }
 .vertu-header {
@@ -86,7 +94,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .vertu-text {
   font-family: Roboto;
@@ -95,9 +103,9 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
-.direction-title {
+.direction-title,.team-header {
   font-family: Roboto;
   /*font-style: normal;*/
   font-weight: bold;
@@ -105,17 +113,9 @@ address {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
-.team-header {
-  font-family: Roboto;
-  /*font-style: normal;*/
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+
 .team-item {
   font-family: Roboto;
   /*font-style: normal;*/
@@ -125,8 +125,7 @@ address {
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--title-text-color);
 }
 .team-spec {
   font-family: Roboto;
@@ -137,7 +136,7 @@ address {
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .map-address {
   font-family: Roboto;
@@ -146,8 +145,8 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff; 
-  background-color: #2F303A;            /*убрать при появлениии фона*/
+  color: #ffffff;
+  background-color: #2f303a; /*убрать при появлениии фона*/
 }
 .footer-coordinates {
   font-family: Roboto;
@@ -157,5 +156,24 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #2F303A;            /*убрать при появлениии фона*/
+  background-color: #2f303a; /*убрать при появлениии фона*/
+}
+/*---------------------для Потрфолио---------------*/
+.item-header {
+  font-family: Roboto;
+  /*font-style: normal;*/
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.them {
+  font-family: Roboto;
+  /*font-style: normal;*/
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
