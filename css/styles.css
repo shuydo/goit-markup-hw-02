@@ -3,31 +3,83 @@
   --title-text-color:#212121;
   --accent-color:#2196f3;
 }
-li {list-style-type: none;}
-a {text-decoration: none;}
+body{
+  font-family: Roboto;
+  font-style: normal; /*не ясно, почему нет у элемента 1st, в TDs*/
+}
+image{display: block;}
+h1,h2,h3,h4,h5,h6{margin: 0;}
+p{margin: 0;} 
+ul,ol{margin: 0;
+      padding: 0;}
 address {font-style: normal;}
 
+                                          /* Utility */
+.list {list-style: none;}
+.link {text-decoration: none;}
+
+/* repin start */
+/* body {  font-family: var(--main-font);}
+.list {  list-style: none;}
+.link {text-decoration: none;}
+h1,h2,h3,h4,h5,h6 {margin: 0;}
+ul,ol {margin: 0;padding: 0;}
+p {  margin: 0;}
+img {  display: block;}
+.address {  font-style: normal;} */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* .container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}  */
+/* .section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+} */
+/* repin end  */
+                                        /* Header start */
+.navigation{
+  display: flex;
+  align-items: center;
+}
+/* height: 80px; */
 .logo1st {
   font-family: Raleway, sans-serif;
-  font-style: normal; /*in default*/
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
+  margin-left: 15px;
+  }
 .logo2nd {
   font-family: Raleway, sans-serif;
-  /*font-style: normal;*/
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
 }
+.header .container{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  /* outline: 1px solid black; */
+} 
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+  min-width: 294px; 
+  /* outline: 1px solid black; */
+  justify-content: space-between;
+}
 .site-nav .link {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -36,6 +88,16 @@ address {font-style: normal;}
 }
 .site-nav .link.is-current{
   color:var(--accent-color);
+}
+/* .email{
+  margin-left: 
+  32px;
+}*/
+.phone{
+  margin-left: 50px;
+} 
+.header address{
+  margin-left: auto;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -52,34 +114,53 @@ address {font-style: normal;}
 }
 .email,
 .phone {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+  /* address{
+    outline: 2px solid black;
+  } */
+.header{
+  height:80;
+}
+                                    /* header end */
+                                    /* Hero start */
+.hero .container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  /* outline: 1px solid black; */
+  background-color:  #2F303A;
+}                                    
+
 .hero-title {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #2f303a; /*убрать при наложении фона*/
+  color:#ffffff;
+  /* color: #ffffff; - цвет из макета*/
+  /* background-color: #2f303a; убрать при наложении фона */
+}
+.hero .button{
+  margin-top: 17px;
 }
 .button {
-  font-family: Roboto;
-  /*font-style: normal;*/
+  /*min-width: ; */
+  padding: 10px 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  display: flex;
+  display: flex;                  /*что эти строки здесь делают*/
   align-items: center;
+
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
@@ -87,10 +168,11 @@ address {font-style: normal;}
   border-color: transparent;
   /*background-color: var(--accent-color);*/
   border-radius: 4px;
+  cursor: pointer;
 }
+                                    /* Hero end */
+                                    /* Vertu sart */
 .vertu-header {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -99,8 +181,6 @@ address {font-style: normal;}
   color: var(--title-text-color);
 }
 .vertu-text {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -108,8 +188,6 @@ address {font-style: normal;}
   color: var(--primary-text-color);
 }
 .direction-title,.team-header {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -119,8 +197,6 @@ address {font-style: normal;}
 }
 
 .team-item {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -130,8 +206,6 @@ address {font-style: normal;}
   color: var(--title-text-color);
 }
 .team-spec {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -141,8 +215,6 @@ address {font-style: normal;}
   color: var(--primary-text-color);
 }
 .map-address {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -151,8 +223,6 @@ address {font-style: normal;}
   background-color: #2f303a; /*убрать при появлениии фона*/
 }
 .footer-coordinates {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -162,8 +232,6 @@ address {font-style: normal;}
 }
 /*---------------------для Потрфолио---------------*/
 .item-header {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -171,8 +239,6 @@ address {font-style: normal;}
   color: var(--title-text-color);
 }
 .them {
-  font-family: Roboto;
-  /*font-style: normal;*/
   font-weight: normal;
   font-size: 16px;
   line-height: 1.88;

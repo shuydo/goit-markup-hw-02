@@ -8,13 +8,14 @@
     <style>
       /* Убираем маркеры */
       /* Обнуляем настройки браузера */
-      li {
+      /*li {
         list-style-type: none;
-      }
+      }*/
+      /*
       ul.header-list li,
       ul.direction-list li {
         display: inline;
-      }
+      }*/
       /*body {
         margin: 0;
         padding: 0;
@@ -53,7 +54,7 @@
     }
 */
     </style>
-    
+
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -62,50 +63,55 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
+  <!--target="_blank" rel="nofollow noreferrer"-->
   <body>
-    <header class="head">
-      <nav class="navigation">
-        <a lang="en" href="index.html" aria-label="Логотип">
-          <span class="logo1st">Web</span><span class="logo2nd">Studio</span>
-        </a>
-        <!--target="_blank" rel="nofollow noreferrer"-->
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="link" lang="en" href="index.html" aria-label="Логотип">
+            <span class="logo1st">Web</span><span class="logo2nd">Studio</span>
+          </a>
 
-        <ul class="site-nav">
-          <li>
-            <a class="link is-current" href="index.html">Студия</a>
-          </li>
-          <li>
-            <a class="link" href="portfolio.html">Портфолио</a>
-          </li>
-          <li>
-            <a class="link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="site-nav list">
+            <li>
+              <a class="link is-current" href="index.html">Студия</a>
+            </li>
+            <li>
+              <a class="link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li>
+              <a class="link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-      <address>
-        <a class="email" lang="en" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="phone" href="+380961111111">+38 096 111 11 11</a>
-      </address>
+        <address>
+          <a class="email link" lang="en" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a class="phone link" href="+380961111111">+38 096 111 11 11</a>
+        </address>
+      </div>
     </header>
     <!--heigh=80-->
 
     <main>
       <!--HERO 1600/600 #2F303A-->
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
-        <!--butt-200/50-->
-        <button class="button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">
+            Эффективные решения <br />для вашего бизнеса
+          </h1>
+          <!--butt-200/50-->
+          <button class="button">Заказать услугу</button>
+        </div>
       </section>
 
       <!--Достоинства-->
       <section class="vertu">
         <h2 hidden>--Достоинства--</h2>
         <!---Перескрыть-->
-        <ul class="vertu-list">
+        <ul class="vertu-list list">
           <li class="vertu-item">
             <h3 class="vertu-header">Внимание к деталям</h3>
             <p class="vertu-text">
@@ -140,7 +146,7 @@
       <!--Направления деятельности-->
       <section class="direction">
         <h2 class="direction-title">Чем мы занимаемся</h2>
-        <ul class="direction-list">
+        <ul class="direction-list list">
           <li>
             <img
               src="images/box-1.jpg"
@@ -171,7 +177,7 @@
       <!--Галерея команды-->
       <section class="team">
         <h2 class="team-header">Наша команда</h2>
-        <ul class="team-list">
+        <ul class="team-list list">
           <li>
             <img src="images/img-1.jpg" alt="Игорь" width="270" height="260" />
             <h3 class="team-item">Игорь Демьяненко</h3>
